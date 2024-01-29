@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mis Notas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Mis Notas</h1>
+        <div>
+            <textarea id="noteInput" placeholder="Escribe tu nota" ></textarea>
+            <select id="categoryInput">
+                <option value="[ PERSONAL ]">Personal</option>
+                <option value="[ TRABAJO ]">Trabajo</option>
+                <option value="[ ESTUDIO ]">Estudio</option>
+            
+            </select>
+            <select id="importanceInput">
+                <option value="high">Muy Importante</option>
+                <option value="medium">Medio</option>
+                <option value="low">Poco Importante</option>
+          
+            </select>
+            <button class="button-create" onclick="createNote()">Crear</button>
+        </div>
+        <ul id="listNotes"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
